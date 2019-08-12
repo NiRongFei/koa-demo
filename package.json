@@ -1,18 +1,18 @@
 {
-  "name": "project",
+  "name": "node-koa-demo",
   "version": "0.0.1",
-  "description": "a koa2 project",
+  "description": "A koa demo for learning node koajs.",
   "main": "index.js",
   "scripts": {
     "init": "node ./init/index.js",
-    "dev": "npm run dev_server & npm run dev_static",
-    "dev_server": "nodemon --harmony ./server/app",
-    "dev_static": "webpack --watch --config ./static/build/webpack.dev.config.js",
-    "start_static": "webpack --config ./static/build/webpack.prod.config.js",
-    "start_server": "node ./server/app.js",
-    "start": "npm run start_static & npm run start_server"
+    "dev": "npm run dev_serve & npm run dev_start",
+    "dev_serve": "nodemon --harmony ./server/app",
+    "dev_start": "webpack --watch --config ./static/build/webpack.dev.config.js",
+    "build": "webpack --config ./static/build/webpack.prod.config.js",
+    "serve": "node ./server/app.js",
+    "start": "npm run build & npm run serve"
   },
-  "author": "chenshenhai",
+  "author": "niko",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
