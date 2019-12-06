@@ -12,7 +12,7 @@
     "serve": "node ./server/app.js",
     "start": "npm run build & npm run serve"
   },
-  "author": "niko",
+  "author": "Niko",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
